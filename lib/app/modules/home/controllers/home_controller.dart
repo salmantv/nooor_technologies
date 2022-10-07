@@ -31,13 +31,13 @@ class HomeController extends GetxController {
 
   Future<List<ProdectModel>> category(String category) async {
     List<ProdectModel> categorylist = [];
-
+    catgorydata.clear();
     for (var element in data) {
       if (element.category == category) {
+        categorylist = [];
         catgorydata.add(element);
       }
     }
-    log(categorylist.toString());
     return catgorydata;
   }
 }

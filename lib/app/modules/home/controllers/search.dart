@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:faceinfinicstask/app/data/prodectmodel.dart';
 import 'package:faceinfinicstask/app/modules/home/controllers/home_controller.dart';
 import 'package:faceinfinicstask/app/modules/home/views/card_widget.dart';
 import 'package:faceinfinicstask/app/modules/home/views/show_prodects.dart';
