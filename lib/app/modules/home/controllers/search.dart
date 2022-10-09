@@ -47,16 +47,19 @@ class CustomSearchDelegate extends SearchDelegate {
     } else {
       int size = 0;
       for (var i = 0; i < homecontroller.data.length; i++) {
-        if (homecontroller.data[i].title == query) {
-          size++;
+        log(homecontroller.data[i].title.toString());
+
+        if (homecontroller.data[i].title!.contains(query)) {
           log(homecontroller.data[i].title.toString());
+
+          size++;
           return ListView.builder(
             itemCount: size,
             itemBuilder: (context, index) {
               return Cardwidget(data: homecontroller.data[i]);
             },
           );
-        }
+        } else {}
       }
     }
 
